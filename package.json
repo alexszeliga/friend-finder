@@ -1,0 +1,23 @@
+{
+  "name": "friend-finder",
+  "version": "0.1.0",
+  "description": "A full stack personality matching app with included personality quiz",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alexszeliga/friend-finder.git"
+  },
+  "author": "Alex Szeliga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/alexszeliga/friend-finder/issues"
+  },
+  "homepage": "https://github.com/alexszeliga/friend-finder#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "path": "^0.12.7"
+  }
+}
