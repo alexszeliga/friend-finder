@@ -1,4 +1,4 @@
-let friends = [
+var friends = [
   {
     name: "Ahmed",
     photo:

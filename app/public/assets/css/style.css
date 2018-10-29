@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css?family=Libre+Franklin|Open+Sans");
+/* 
+font-family: 'Libre Franklin', sans-serif;
+font-family: 'Open Sans', sans-serif; 
+*/
+
+.bg-top {
+    background-image: url("../images/restaurant-social-bar-meal-friend-conversation-100536-pxhere.com.jpg");
+    background-position: center;
+    height: 25vh;
+    width: 100vw;
+    /* position: absolute; */
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-bottom {
+    height: 75vh;
+    width: 100vw;
+    /* position: absolute; */
+    background-color: rgb(169, 105, 38);
+}
+
+.content-container {
+    position: absolute;
+    top: 25vh;
+    bottom: 5vh;
+    margin-top: -3rem;
+    width: 80vw;
+    max-width: 900px;
+    background: rgb(226, 179, 128);
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.content-heading {
+    display: block;
+    text-align: center;
+    font-family: "Libre Franklin", sans-serif;
+    line-height: 3rem;
+    font-size: 3rem;
+    margin: 0rem 1.5rem;
+    border-bottom: 1px solid rgb(169, 105, 38);
+}
+
+.survey-blurb {
+    margin: 1rem 6rem;
+    font-family: "Open Sans", sans-serif;
+}
