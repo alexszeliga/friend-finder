@@ -1,8 +1,21 @@
 @import url("https://fonts.googleapis.com/css?family=Libre+Franklin|Open+Sans");
-/* 
-font-family: 'Libre Franklin', sans-serif;
-font-family: 'Open Sans', sans-serif; 
-*/
+.font-headings {
+    font-family: "Libre Franklin", sans-serif;
+}
+
+.font-body {
+    font-family: "Open Sans", sans-serif;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+body {
+    background-color: rgb(169, 105, 38);
+}
 
 .bg-top {
     background-image: url("../images/restaurant-social-bar-meal-friend-conversation-100536-pxhere.com.jpg");
@@ -25,7 +38,6 @@ font-family: 'Open Sans', sans-serif;
 .content-container {
     position: absolute;
     top: 25vh;
-    bottom: 5vh;
     margin-top: -3rem;
     width: 80vw;
     max-width: 900px;
@@ -45,6 +57,182 @@ font-family: 'Open Sans', sans-serif;
 }
 
 .survey-blurb {
-    margin: 1rem 6rem;
+    margin: 1rem 1.5rem;
     font-family: "Open Sans", sans-serif;
+}
+
+.bell-div {
+    position: relative;
+    z-index: 10;
+    max-width: 192px;
+}
+
+.bell-div-form {
+    position: relative;
+    z-index: 10;
+    max-width: 192px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.button-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    align-content: space-around;
+}
+
+.lib-bell-button {
+    width: 100%;
+}
+
+.lib-bell-submit {
+    width: 100%;
+    margin: auto;
+}
+
+.overlay-num {
+    color: grey;
+    position: absolute;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    font-size: 5rem;
+    cursor: pointer;
+}
+
+.overlay-num:hover {
+    color: dimgray;
+    text-shadow: 0px 0px 15px rgb(169, 105, 38);
+}
+
+.survey-question {
+    font-size: 1.5rem;
+    display: block;
+    text-align: center;
+    font-family: "Libre Franklin", sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+    html {
+        font-size: 75%;
+    }
+    .content-container {
+        width: 100vw;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    html {
+        font-size: 150%;
+    }
+}
+
+.user-data-form {
+    display: none;
+    justify-content: center;
+}
+
+.user-form {
+    display: block;
+    width: 100%;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    position: absolute;
+    top: 20vh;
+    width: 60vw;
+    max-width: 900px;
+    background: rgb(235, 207, 179);
+    border-radius: 2rem;
+    border: 2px solid rgb(169, 105, 38);
+    left: 50%;
+    transform: translate(-50%, 0);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 33vh 33vh;
+    padding: 1rem;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+}
+
+.modal-image {
+    grid-column: 1 / 1;
+    grid-row: 1 / 3;
+    position: relative;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.friend-image {
+    min-width: 20vw;
+    max-width: 100%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.modal-submit {
+    position: relative;
+    grid-column: 2 / 2;
+    grid-row: 2 / 3;
+    display: grid;
+    align-content: center;
+}
+
+.lib-bell-done {
+    height: 25vh;
+    width: auto;
+    margin: auto;
+}
+
+.overlay-done {
+    color: grey;
+    position: absolute;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    font-size: 5rem;
+    cursor: pointer;
+}
+
+.overlay-done:hover {
+    color: dimgray;
+    text-shadow: 0px 0px 15px rgb(169, 105, 38);
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0;
+    }
+    to {
+        top: 20vh;
+        opacity: 1;
+    }
+}
+
+.modal-friend {
+    margin: 2rem;
 }

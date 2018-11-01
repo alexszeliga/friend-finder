@@ -8,7 +8,8 @@ var questions = [
   "On a scale of 1 to 5, do you even Mum, bro?",
   "Something about Comcast (1-5)",
   "Is it okay to park here, you think?",
-  "How many jawns does it take to get to the center of a tootsie pop?"
+  "How many jawns does it take?",
+  "All done!"
 ];
 
 module.exports = questions;

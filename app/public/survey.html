@@ -9,6 +9,8 @@
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -19,14 +21,72 @@
     <div class="bg-bottom">
 
     </div>
-    <div class="content-container">
+    <div class="content-container clearfix">
         <h2 class="content-heading">Survey</h2>
         <p class="survey-blurb">To get a better sense of just how Philly you are, we're going to ask a series of
             questions. Please answer
             them as honestly as you can. Our complicated personality matching algorithm will then pair you with the
-            Philly Phriendo that you so desperately desire!</p>
-    </div>
+            Philly Phriendo that you so desperately desire! Click on the Liberty Bell that best represents your answer
+            to move on to the next question.</p>
+        <div class="survey-question-container">
 
+        </div>
+        <div class="button-grid">
+            <div class="bell-div" data-number="1">
+                <img class="lib-bell-button" src="./assets/images/lib-bell.svg">
+                <p class="overlay-num">1</p>
+            </div>
+            <div class="bell-div" data-number="2">
+                <img class="lib-bell-button" src="./assets/images/lib-bell.svg">
+                <p class="overlay-num">2</p>
+            </div>
+            <div class="bell-div" data-number="3">
+                <img class="lib-bell-button" src="./assets/images/lib-bell.svg">
+                <p class="overlay-num">3</p>
+            </div>
+            <div class="bell-div" data-number="4">
+                <img class="lib-bell-button" src="./assets/images/lib-bell.svg">
+                <p class="overlay-num">4</p>
+
+            </div>
+            <div class="bell-div" data-number="5">
+                <img class="lib-bell-button" src="./assets/images/lib-bell.svg">
+                <p class="overlay-num">5</p>
+            </div>
+        </div>
+        <div class="user-data-form font-body">
+            <div class="user-form">
+                <label for="user-name">Name</label>
+                <input type="text" name="user-name" class="user-name">
+                <label for="user-pic">Profile Pic URL</label>
+                <input type="text" name="user-pic" class="user-pic">
+
+                <div class="bell-div-form" data-number="6">
+                    <img class="lib-bell-submit" src="./assets/images/lib-bell.svg">
+                    <p class="overlay-num">Submit</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="modal">
+        <div class="modal-content">
+            <div class="modal-image">
+                <img class="friend-image" src="#">
+            </div>
+            <div class="modal-friend font-body">
+                <p>Friend Name:</p><br>
+                <p class="friend-name"></p>
+
+            </div>
+            <div class="modal-submit" data-number="6">
+                <img class="lib-bell-done" src="./assets/images/lib-bell.svg">
+                <p class="overlay-done">Done</p>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="./assets/js/survey.js">
+    </script>
 </body>
 
 </html>
