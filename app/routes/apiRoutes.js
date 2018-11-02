@@ -37,6 +37,7 @@ module.exports = function(app) {
     // add new user to friendData
     friendData.push(request.body);
   });
+  // api for question data; you want questions: you got 'eem!
   app.get("/api/questiondata", function(request, response) {
     response.json(questionData);
   });

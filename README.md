@@ -17,6 +17,8 @@ All of this code was made by hand by organic artesinal developers in a cruelty f
 # Next steps:
 
 - Add a real-deal database
+- Input validation is needed on names and pictures
+- Nice-to-have: upload photos
 - Refactor hacky code
   - Add a friend constructor
   - further modularize
