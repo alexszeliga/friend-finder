@@ -23,3 +23,6 @@ All of this code was made by hand by organic artesinal developers in a cruelty f
   - Add a friend constructor
   - further modularize
   - Get rid of static HTML pages
+  - Clean up / organize singular CSS file
+- Mobile modal
+  - page is completely mobile responsive except for the modal.
